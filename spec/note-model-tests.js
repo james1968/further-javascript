@@ -9,9 +9,11 @@ function testsForNote() {
       console.log('note contains text')
     }
 
-    // if (note.abbreviation.length > 20) {
-    //     throw new Error('abbreviation is too long! Max 20 characters.');
-    // }
+    if (note.abbreviation.length > 20) {
+        throw new Error('abbreviation is too long! Max 20 characters.');
+    } else {
+      console.log('yay')
+    }
 };
 
 
