@@ -12,10 +12,19 @@ function testsForNoteListModel() {
     list.newNote(text1);
     var text2 = "I love CSS.";
     list.newNote(text2);
+
     if (list.allNotes().length === 3) {
         console.log('correct number of notes saved');
     } else {
         throw new Error('wrong number of notes saved - ' + list.notes.length);
+    }
+
+    if (list.allNotes()[0].text === text0 &&
+        list.allNotes()[1].text === text1 &&
+        list.allNotes()[2].text === text2) {
+        console.log('all notes saved')
+    } else {
+        throw new Error('all notes NOT saved')
     }
 }
 
