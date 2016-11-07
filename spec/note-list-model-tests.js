@@ -1,4 +1,4 @@
-function testsNoteListModel() {
+function testsForNoteListModel() {
     var list = new NoteList();
     var text = "Javascript is a wonderful language and the easiest to learn and ;everybody loves it."
     list.newNote(text);
@@ -8,3 +8,5 @@ function testsNoteListModel() {
         throw new Error('note not saved')
     }
 }
+
+testsForNoteListModel();
