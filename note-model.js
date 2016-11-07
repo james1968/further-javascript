@@ -1,5 +1,5 @@
 function Note() {
-	this.text = "something";
+	this.text = document.getElementById('noteText').value;
 }
 
 (function(exports) {
