@@ -1,20 +1,19 @@
 (function(exports) {
 
-    function Note() {
-        this.text;
-        this.abbreviation;
+    function Note(text) {
+        this.text = text;
+        this.abbreviation = text.substring(0,19);
     }
 
-    Note.prototype.enterText = function(text) {
-        this.text = text;
-        this.abbreviation();
+    Note.prototype.printText = function(text) {
+        return this.text;
     };
 
-    Note.prototype.abbreviation = function () {
-        this.abbreviation = this.text.substring(0,19);
+    Note.prototype.printAbbreviation = function () {
+        return this.abbreviation;
     };
 
     exports.Note = Note;
-    exports.enterText = this.enterText;
-    exports.abbreviation = this.abbreviation;
+    exports.printText = this.printText;
+    exports.printAbbreviation = this.printAbbreviation;
 })(this);

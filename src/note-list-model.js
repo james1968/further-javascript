@@ -5,8 +5,7 @@
     }
 
     NoteList.prototype.newNote = function(text) {
-        note = new Note();
-        note.enterText(text);
+        note = new Note(text);
         this.notes.push(note);
     }
 
