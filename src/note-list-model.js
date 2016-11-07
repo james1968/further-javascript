@@ -1,9 +1,15 @@
-function NoteList() {
-    this.notes = [];
-}
+(function(exports) {
 
-NoteList.prototype.newNote = function(text) {
-    note = new Note();
-    note.enterText(text);
-    this.notes.push(note);
-}
+    function NoteList() {
+        this.notes = [];
+    }
+
+    NoteList.prototype.newNote = function(text) {
+        note = new Note();
+        note.enterText(text);
+        this.notes.push(note);
+    }
+
+    exports.NoteList = NoteList;
+    exports.newNote = this.newNote;
+})(this);
