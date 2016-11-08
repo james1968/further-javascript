@@ -9,8 +9,12 @@
         this.notes.push(note);
     }
 
+    NoteList.prototype.addNote = function(note) {
+        this.notes.push(note);
+    }
+
     NoteList.prototype.allNotes = function() {
-        return this.notes; 
+        return this.notes;
     }
 
     exports.NoteList = NoteList;
