@@ -7,7 +7,9 @@ NoteListView.prototype.returnhtml = function(notesList) {
   for(var i = 0; i < array.length;i++) {
 
     var item = document.createElement('li');
-    item.appendChild(document.createTextNode(array[i].printText()));
+    var div = document.createElement('div');
+    div.appendChild(document.createTextNode(array[i].printText()));
+    item.appendChild(div);
     list.appendChild(item);
     }
     console.log(list);
