@@ -15,7 +15,7 @@ function isTextCorrect() {
         console.log('Test failed');
     }
 
-    var htmlstring = '<ul><li><div>Test text entry for </div></li><li><div>second test for the </div></li></ul>'
+    var htmlstring = '<ul><li><div>Test text entry for </div></li><li><div>second test for the </div></li></ul>';
 
     if (noteListView.returnhtml(list) === htmlstring) {
         console.log('Note List displayed');
