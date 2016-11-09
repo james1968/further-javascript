@@ -1,7 +1,6 @@
 function noteControllerTest() {
 
-  var noteListView = new NoteListView();
-  var noteController = new NoteController(noteListView.returnhtml(list));
+  new NoteController(list);
   var result = '<li><div>Test text entry for the first note</div></li><li><div>second test for the second note</div></li>';
   if (document.getElementById('app').lastChild.innerHTML == result){
     console.log('Note List displayed');
@@ -12,4 +11,4 @@ function noteControllerTest() {
 
 window.onload = function() {
   noteControllerTest();
-}
+};
