@@ -4,7 +4,6 @@ window.onload = function(){
     appDiv.appendChild(view.returnhtml(list));
 };
 
-
 var note = new Note('Favourite drink: selzer');
 var list = new NoteList();
 var view = new NoteListView();
