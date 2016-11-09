@@ -14,7 +14,7 @@ function isTextCorrect() {
     } else {
         console.log('Test failed');
     }
-    
+
     var htmlstring = '<ul><li><div>Test text entry for the first note</div></li><li><div>second test for the second note</div></li></ul>';
     if (noteListView.returnhtml(list) === htmlstring) {
         console.log('Note List displayed');

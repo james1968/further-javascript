@@ -1,3 +1,5 @@
+(function(exports) {
+
 function NoteListView() {
 
 NoteListView.prototype.returnhtml = function(notesList) {
@@ -18,3 +20,6 @@ NoteListView.prototype.returnhtml = function(notesList) {
 };
 
 }
+exports.NoteListView = NoteListView;
+
+})(this);
