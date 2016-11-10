@@ -1,6 +1,6 @@
 function testsForNoteListModel() {
     var list = new NoteList();
-    var text0 = "Javascript is a wonderful language and the easiest to learn and ;everybody loves it."
+    var text0 = "Javascript is a wonderful language and the easiest to learn and ;everybody loves it.";
     list.newNote(text0);
     if (list.notes[0].text === text0) {
         console.log('notes saved');
@@ -22,9 +22,9 @@ function testsForNoteListModel() {
     if (list.allNotes()[0].text === text0 &&
         list.allNotes()[1].text === text1 &&
         list.allNotes()[2].text === text2) {
-        console.log('all notes saved')
+        console.log('all notes saved');
     } else {
-        throw new Error('all notes NOT saved')
+        throw new Error('all notes NOT saved');
     }
 }
 

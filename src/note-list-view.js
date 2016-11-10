@@ -10,11 +10,10 @@ NoteListView.prototype.returnhtml = function(notesList) {
 
     var item = document.createElement('li');
     var div = document.createElement('div');
-    div.appendChild(document.createTextNode(array[i].printText()));
+    div.appendChild(document.createTextNode(array[i].printAbbreviation()));
     item.appendChild(div);
     list.appendChild(item);
     }
-    console.log(list);
   return list;
 
 };
